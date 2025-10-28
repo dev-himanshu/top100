@@ -48,7 +48,7 @@ public class EvenOrOddNumber {
     // Solution using Method-2
     public static void usingTernary(int number) {
         String result = (number % 2 == 0) ? "Even" : "Odd";
-        System.out.println("Odd");
+        System.out.println(result);
     }
 
     // Solution using Method-3
