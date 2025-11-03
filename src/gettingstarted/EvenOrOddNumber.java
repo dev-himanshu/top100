@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /*
  * ------------------------------------------------------------
+ * TITLE: Check Whether a number is Even or Odd using Java.
+ * ------------------------------------------------------------
  * PROBLEM STATEMENT:
  * Given an integer input the objective is to write a Java code to Check Whether a Number is Even or Odd.
  * To do so the main idea is to divide the number by 2 and check if it’s divisible or not.
@@ -15,28 +17,29 @@ import java.util.Scanner;
  * Output : Odd
  * ------------------------------------------------------------
  * SOLUTIONS:
- * Method-1: Using Brute Force. (modulo operator)
- * Method-2: Using ternary operator.
- * Method-3: Using bitwise operator.
+ * Approach-1: Using Brute Force. (modulo operator)
+ * Approach-2: Using ternary operator.
+ * Approach-3: Using bitwise operator.
  * ------------------------------------------------------------
  */
 public class EvenOrOddNumber {
     public static void main(String[] args) {
         // Take Input
+        System.out.print("Please enter a number: ");
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
 
-        // Method-1 call
+        // Approach-1 function call
         usingModulo(number);
 
-        // Method-2 call
+        // Approach-2 function call
         usingTernary(number);
 
-        // Method-3 call
+        // Approach-3 function call
         usingBitwise(number);
     }
 
-    // Solution using Method-1
+    // Approach-1: Using Brute Force. (modulo operator)
     public static void usingModulo(int number) {
         if (number % 2 == 0) {
             System.out.println("Even");
@@ -45,13 +48,13 @@ public class EvenOrOddNumber {
         }
     }
 
-    // Solution using Method-2
+    // Approach-2: Using ternary operator.
     public static void usingTernary(int number) {
         String result = (number % 2 == 0) ? "Even" : "Odd";
         System.out.println(result);
     }
 
-    // Solution using Method-3
+    // Approach-3: Using bitwise operator.
     public static void usingBitwise(int number) {
         if ((number & 1) == 0) {
             System.out.println("Even");

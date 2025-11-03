@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 /*
  * ------------------------------------------------------------
+ * TITLE: Check if a Given Number is Positive or Negative in Java.
+ * ------------------------------------------------------------
  * PROBLEM STATEMENT:
  * The number is demonstrated as positive or negative by comparing
  * the entered number with Zero (0).
@@ -24,24 +26,26 @@ import java.util.Scanner;
  * Output : Positive
  * ------------------------------------------------------------
  * SOLUTIONS:
- * Method-1: Using Brute Force. (if-else)
- * Method-2: Using ternary operator.
+ * Approach-1: Using Brute Force. (if-else)
+ * Approach-2: Using ternary operator.
  * ------------------------------------------------------------
  */
 public class PositiveOrNegativeNumber {
 
     public static void main(String[] args) {
         // Take Input
+        System.out.print("Please enter a number: ");
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
 
-        // Method-1 call
+        // Approach-1 function call
         usingIfElse(number);
 
-        // Method-2 call
+        // Approach-2 function call
         usingTernary(number);
     }
 
+    // Approach-1: Using Brute Force. (if-else)
     static void usingIfElse(int number) {
         if  (number == 0) {
             System.out.println("Zero");
@@ -52,6 +56,7 @@ public class PositiveOrNegativeNumber {
         }
     }
 
+    // Approach-2: Using ternary operator.
     static void usingTernary(int number) {
         String result = (number == 0) ? "Zero" : ( (number < 0) ? "Negative" : "Positive");
         System.out.println(result);
