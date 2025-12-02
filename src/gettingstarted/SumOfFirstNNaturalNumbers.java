@@ -60,7 +60,7 @@ public class SumOfFirstNNaturalNumbers {
 
     // Approach-3: Using Formula for the Sum of Nth Term.
     static void usingFormula(int number) {
-        int sumOfFirstNaturalNumbers = number * ((number + 1) / 2);
+        int sumOfFirstNaturalNumbers = (number * (number + 1)) / 2;
         System.out.println("The sum of the natural numbers using formula is " + sumOfFirstNaturalNumbers);
     }
 }
