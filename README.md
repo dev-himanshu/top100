@@ -9,3 +9,4 @@ Getting Started.
 5. Find the Greatest of the Two Numbers in Java. [Solution Link](src/gettingstarted/GreatestOfTheTwoNumbers.java)
 6. Find the Greatest of the Three Numbers in Java. [Solution Link](src/gettingstarted/GreatestOfThreeNumbers.java)
 7. Check Whether or Not the Year is a Leap Year in Java. [Solution Link](src/gettingstarted/CheckLeapYear.java)
+8. Check Whether a Given Number is Prime or Not in Java. [Solution Link](src/gettingstarted/CheckPrimeNumber.java)
